@@ -1,0 +1,1 @@
+{"inputUnits":[2],"outputUnits":1,"inputs":{"battery":{"dtype":"number","min":800,"max":9500},"weight":{"dtype":"number","min":66,"max":753}},"outputs":{"thickness":{"dtype":"number","min":5.1,"max":18.5}},"isNormalized":true}
