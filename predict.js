@@ -1,9 +1,13 @@
 const nn = ml5.neuralNetwork({ task: 'regression', debug: true })
 
+
 let battery = document.getElementById('battery')
 let weight = document.getElementById('weight')
 
 nn.load('./model/model.json', modelLoaded)
+
+const button = document.querySelector('#btn')
+button.addEventListener('click',() => makePrediction())
 
 function modelLoaded() {
     //yay
@@ -19,4 +23,3 @@ async function makePrediction() {
     document.getElementById('result').innerHTML = `Geschatte dikte: ${results[0].thickness}`
 }
 
-document.getElementById('btn').addEventListener('click', makePrediction)
