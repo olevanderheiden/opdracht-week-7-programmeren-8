@@ -20,6 +20,6 @@ async function makePrediction() {
     const results = await nn.predict({ battery: valueBattery, weight: valueWeight })
 
     // console.log(`Geschatte opslag: ${results[0].storage}`)
-    document.getElementById('result').innerHTML = `Geschatte dikte: ${results[0].thickness}`
+    document.getElementById('result').innerHTML = `Geschatte dikte: ${results[0].thickness} Milimeter`
 }
 
